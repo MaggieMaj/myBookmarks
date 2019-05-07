@@ -1,0 +1,28 @@
+*{margin: 0;padding: 0;}/*所有默认的外边距和内边距都去掉*/
+a{text-decoration: none;}/*a标签中的文本装饰都清除*/
+kbd{border: 1px solid red;
+    width: 4em;height: 4em;display: inline-block;/*将kbd变成内联元素，加个display:inline-block*/
+    text-transform: uppercase;/*小写字母转换成大写字母*/
+    position: relative;/*父元素相对定位*/
+}
+kbd > button{
+    position: absolute;/*子元素绝对定位*/
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+kbd:hover > button{
+    display: inline-block;/*悬停 显示button标签*/
+}
+main{
+    text-align: center;    /*在容器的父元素上面加 居中*/
+}
+#mainXXXX{                  /*将这个容器变成内联元素*/
+    display: inline-block;
+}
+#mainXXXX > div:nth-child(2){   /*将第2行右移一个字符*/
+    margin-left: 2em;
+}
+#mainXXXX > div:nth-child(3){    /*将第3行右移两个字符*/
+    margin-left: 4em;
+}
