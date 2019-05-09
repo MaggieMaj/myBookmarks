@@ -55,7 +55,7 @@
                 hash[key] = x //把用户输入的网址给hash键，按字母键即可访问
                 img2.src = 'http://'+x+'/favicon.ico'
                 img2.onerror = function(XXXX){   //如果网址错误，则还是显示不会错的图片
-                     XXXX.target.src = '//i.loli.net/2019/05/08/5cd2d6c1d735c.jpg'
+                     XXXX.target.src = '//i.loli.net/2019/05/09/5cd3db653ceca.jpg'
                 }
                 localStorage.setItem('zzz',JSON.stringify(hash))//只要hash变了，就把hash存到zzz中
                 console.log(hash)//打印
@@ -68,10 +68,10 @@
             if(domain){
                 img.src = 'http://'+domain+'/favicon.ico'//图片下载地址
             }else{
-                img.src = '//i.loli.net/2019/05/08/5cd2d6c1d735c.jpg'//不会错的好看图片
+                img.src = '//i.loli.net/2019/05/09/5cd3db653ceca.jpg'//不会错的好看图片
             }
             img.onerror = function(XXXX){   //如果网址错误，则还是显示不会错的图片
-                XXXX.target.src = '//i.loli.net/2019/05/08/5cd2d6c1d735c.jpg'
+                XXXX.target.src = '//i.loli.net/2019/05/09/5cd3db653ceca.jpg'
             }
             return img
     }
