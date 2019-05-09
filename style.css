@@ -14,15 +14,57 @@ kbd > button{
 kbd:hover > button{
     display: inline-block;/*悬停 显示button标签*/
 }
+body{
+    background: grey url(./wall.jpg) no-repeat center center;
+    background-size: cover;
+}
 main{
     text-align: center;    /*在容器的父元素上面加 居中*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
-#mainXXXX{                  /*将这个容器变成内联元素*/
+.wrapper{
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+}
+#main{                  /*将这个容器变成内联元素*/
     display: inline-block;
 }
-#mainXXXX > div:nth-child(2){   /*将第2行右移一个字符*/
-    margin-left: 2em;
+#main > div:nth-child(2){   /*将第2行右移一个字符*/
+    margin-left: -22px;
 }
-#mainXXXX > div:nth-child(3){    /*将第3行右移两个字符*/
-    margin-left: 4em;
+#main > div:nth-child(3){    /*将第3行右移两个字符*/
+    margin-left: -80px;
+}
+.key{
+    width: 50px;
+    height: 40px;
+    background: linear-gradient(to bottom, #292929 0%,#111111 100%);
+    border: 1px solid #373737;
+    color: #c5c5c5;
+    font-size: 16px;
+    font-family: Helvetica;
+    border-radius: 6px;
+    box-shadow: 0px 0px 0px 1px #1a1b1c,0px 0px 0px 2px #1f2020,0px 3px 0px 2px #080808;
+    position: relative;
+}  
+.key .text{
+    position: absolute;
+    left: 4px;
+    top: 2px;
+} 
+.key img{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 4px;
+    bottom: 2px;
+} 
+.row{
+    margin: 20px;
+}   
+.row .key{
+    margin: 0 10px;
 }
